@@ -34,3 +34,17 @@ async function startProgram() {
 	}
 
 }
+
+
+
+async function startProgram() {
+  setHeading(0);
+	setMainLed({ r: 0, g: 0, b: 255 });
+	await delay(0.5);
+	setSpeed(255);
+	while (true) {
+		await spin(360, 2.5);
+		await spin(-360, 2.5);
+		await delay(0.025);
+ }   }
+
